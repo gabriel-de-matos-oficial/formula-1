@@ -9,6 +9,8 @@
 
     <div class="container">
 
+    <a class="btn-back" href="index.html">Voltar para a página inicial</a>
+
     <h2>Compra de Ingressos - Fórmula 1</h2>
 
     <form action="pages/salvar.php" method="POST">

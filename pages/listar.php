@@ -18,6 +18,7 @@ $resultado = mysqli_query($conexao, $sql);
 </head>
 <body>
     <div class="list-container">
+        <a class="btn-back" href="../index.html">Voltar para a página inicial</a>
         <h1>Ingressos Comprados</h1>
 
         <div class="table-wrapper">

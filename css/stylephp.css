@@ -73,6 +73,24 @@ button:hover{
     transform: scale(1.02);
 }
 
+.btn-back{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    background-color: #2b2b2b;
+    color: #fff;
+    border: 1px solid #ff1801;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-back:hover{
+    background-color: #ff1801;
+    transform: translateY(-1px);
+}
+
 .list-container{
     width: min(1100px, 95%);
     background-color: #151515;
