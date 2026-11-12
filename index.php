@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Define a codificação do documento para suportar caracteres especiais em português. -->
     <meta charset="UTF-8">
+    <!-- Título da página exibido na aba do navegador. -->
     <title>Compra de Ingressos Fórmula 1</title>
+    <!-- Carrega o arquivo CSS específico desta página de compra. -->
     <link rel="stylesheet" href="css/stylephp.css">
 </head>
 <body>
 
+    <!-- A div container centraliza o formulário na tela. -->
     <div class="container">
 
+    <!-- Este link leva o usuário de volta para a página inicial do site. -->
     <a class="btn-back" href="index.html">Voltar para a página inicial</a>
 
+    <!-- Título principal da página de compra. -->
     <h2>Compra de Ingressos - Fórmula 1</h2>
 
+    <!-- O formulário envia os dados para salvar.php usando o método POST. -->
     <form action="pages/salvar.php" method="POST">
 
         <label>Nome:</label><br>

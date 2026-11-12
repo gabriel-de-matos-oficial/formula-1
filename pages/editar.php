@@ -1,13 +1,18 @@
 <?php
 
+// Este arquivo busca os dados do ingresso escolhido para permitir a edição.
 include("../config/conexao.php");
 
+// Recebe o id do registro pela URL para localizar o item correto.
 $id = $_GET['id'];
 
+// Consulta os dados do ingresso específico no banco.
 $sql = "SELECT * FROM ingressos WHERE id=$id";
 
+// Executa a consulta e armazena o resultado em $resultado.
 $resultado = mysqli_query($conexao, $sql);
 
+// Converte a linha retornada em um array associativo para usar os dados no formulário.
 $dados = mysqli_fetch_assoc($resultado);
 
 ?>
@@ -15,15 +20,21 @@ $dados = mysqli_fetch_assoc($resultado);
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Define a codificação do documento. -->
     <meta charset="UTF-8">
+    <!-- Ajusta a página para telas menores. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página de edição. -->
     <title>Editar Ingresso</title>
+    <!-- Carrega o estilo visual da página. -->
     <link rel="stylesheet" href="../css/stylephp.css">
 </head>
 <body>
     <div class="edit-container">
+        <!-- Link de retorno para a página principal do site. -->
         <a class="btn-back" href="../index.html">Voltar para a página inicial</a>
 
+        <!-- Título da tela de edição. -->
         <h2>Editar Ingresso</h2>
 
         <form class="edit-form" action="atualizar.php" method="POST">

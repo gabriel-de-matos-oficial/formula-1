@@ -1,3 +1,5 @@
+/* CSS da área administrativa e de compra do site.
+   Este arquivo define a aparência das páginas PHP, como formulário de compra, listagem e edição. */
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,7 @@ body{
 }
 
 .container{
+    /* Estilo principal do bloco do formulário de compra. */
     background-color: #151515;
     width: 450px;
     padding: 35px;
@@ -24,6 +27,8 @@ body{
 }
 
 .edit-container{
+    /* Define o tamanho e o visual do formulário de edição de ingressos. */
+
     width: 100%;
     max-width: 520px;
     background-color: #151515;

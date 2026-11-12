@@ -1,7 +1,9 @@
 /* ============ RESET & BASE ============ */
+/* Este bloco remove margens e paddings padrão do navegador e define a base visual geral do site. */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 :root{
+
   --red:#e10600;
   --red-dark:#b30500;
   --black:#15151e;
@@ -36,6 +38,7 @@ p{margin-bottom:1rem;color:#d6d6dc}
 section{padding:6rem 0;position:relative}
 
 /* ============ NAV ============ */
+/* Nesta parte do CSS são definidos a barra de navegação, o logo e os links do menu principal. */
 .nav{
   position:sticky;top:0;z-index:100;
   background:rgba(21,21,30,.92);
@@ -71,6 +74,7 @@ section{padding:6rem 0;position:relative}
 .nav-cta a:hover{color:var(--red);transform:none}
 
 /* ============ HERO ============ */
+/* O hero é a seção inicial com mensagem principal, background e botões de ação. */
 .hero{
   min-height:92vh;
   display:grid;place-items:center;
@@ -153,17 +157,20 @@ section{padding:6rem 0;position:relative}
 @keyframes speed{from{transform:translateX(0)}to{transform:translateX(140vw)}}
 
 /* ============ STATS STRIP ============ */
+/* Bloco que mostra estatísticas da Fórmula 1 em formato de números visuais. */
 .stats{background:var(--carbon);padding:3rem 0;border-top:1px solid #2a2a33;border-bottom:1px solid #2a2a33}
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:2rem;text-align:center}
 .stat-num{font-size:3rem;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .stat-label{text-transform:uppercase;letter-spacing:.15em;font-size:.8rem;color:#9a9aa3;margin-top:.4rem}
 
 /* ============ SECTION HEADER ============ */
+/* Define o estilo dos títulos e textos de introdução das seções do site. */
 .section-head{text-align:center;margin-bottom:4rem}
 .section-head h2 span{color:var(--red)}
 .section-head p{max-width:640px;margin:0 auto;color:#9a9aa3}
 
 /* ============ CARDS GRID ============ */
+/* Organiza os cards e blocos informativos em colunas responsivas. */
 .grid{display:grid;gap:1.5rem}
 .grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .grid-4{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
@@ -184,6 +191,7 @@ section{padding:6rem 0;position:relative}
 .card .meta{color:var(--red);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1rem}
 
 /* ============ DRIVER CARDS ============ */
+/* Define o estilo dos cards dos pilotos com número, nome e informações. */
 .driver-card{
   background:linear-gradient(180deg,#1f1f27 60%, #15151e 100%);
   border-radius:10px;overflow:hidden;border:1px solid #2a2a33;
@@ -208,6 +216,7 @@ section{padding:6rem 0;position:relative}
 .driver-stats span{font-size:.7rem;color:#9a9aa3;text-transform:uppercase;letter-spacing:.1em}
 
 /* ============ TEAM CARDS ============ */
+/* Estilo dos cards de equipes e marcas utilizadas no site. */
 .team-card{
   display:flex;align-items:center;gap:1.5rem;
   background:#1f1f27;padding:1.5rem;border-radius:8px;border-left:6px solid var(--accent,var(--red));
@@ -223,6 +232,7 @@ section{padding:6rem 0;position:relative}
 .team-info p{margin:0;font-size:.85rem;color:#9a9aa3}
 
 /* ============ CIRCUIT / TRACK CARDS ============ */
+/* Formatação dos cards de circuitos e informações das pistas. */
 .track-card{
   background:linear-gradient(135deg,#1f1f27,#15151e);
   border-radius:8px;padding:2rem;border:1px solid #2a2a33;
